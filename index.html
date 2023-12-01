@@ -1,0 +1,948 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blazor-POS</title>
+    <base href="/" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default.css" />
+    <link href="dist-assets/css/themes/lite-purple.css" rel="stylesheet" />
+    <link
+      href="dist-assets/css/plugins/perfect-scrollbar.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist-assets/css/plugins/fontawesome-5.css" />
+    <link href="dist-assets/css/plugins/metisMenu.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link href="/css/site.css" rel="stylesheet" />
+
+    <script src="chrome-extension://lghjfnfolmcikomdjmoiemllfnlmmoko/js/webScript.js"></script>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1142.0"
+    data-gr-ext-installed=""
+    cnet-shopping-enabled="true"
+  >
+    <!--Blazor:{"sequence":0,"type":"server","descriptor":"CfDJ8B/Va3Z2yzVLiXswrsa/hRPTUk27h2LT3JQIS3XqOcG\u002B0bGAEBHC5lDBjTgrd/tWOWFOLv39jkkzvY0aEyWiAWa/DgivpQj1HOZB/6ctPAYJUmI9P7XSoMwLf/AoTV1w0cwnLnlQWzIb4wq5bPSIgrMQFsHK2l\u002BZmK/q/O9drG0JHYWTf9GJbEknq1EK5qa71lDxE9Ai8augucm6/bI8ByEPX3uj/jKDUKi9mGSRTy884lSFwhB/iG0\u002BJ0//x/TkiVZaZ42mFhOVwUnwd6V7dTrBpA5t4wPywKwYHg2Oj/vfojB3u75834yzORtZin349nPjXYsEC4RoVOzljd\u002BttE8="}--><!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><mudrtlprovider
+      ><!--!--><!--!--><style>
+        .mud-chart-serie:hover {
+          filter: url(#lighten);
+        }
+      </style>
+
+      <!--!--><style>
+        :root {
+          --mud-palette-black: #000000;
+          --mud-palette-white: #ffffff;
+          --mud-palette-primary: #594ae2;
+          --mud-palette-primary-rgb: 89, 74, 226;
+          --mud-palette-primary-text: #ffffff;
+          --mud-palette-primary-darken: rgb(59, 41, 221);
+          --mud-palette-primary-lighten: rgb(119, 107, 231);
+          --mud-palette-primary-hover: rgba(89, 74, 226, 0.06);
+          --mud-palette-secondary: #ff4081;
+          --mud-palette-secondary-rgb: 255, 64, 129;
+          --mud-palette-secondary-text: #ffffff;
+          --mud-palette-secondary-darken: rgb(255, 26, 104);
+          --mud-palette-secondary-lighten: rgb(255, 102, 154);
+          --mud-palette-secondary-hover: rgba(255, 64, 129, 0.06);
+          --mud-palette-tertiary: #1ec8a5;
+          --mud-palette-tertiary-rgb: 30, 200, 165;
+          --mud-palette-tertiary-text: #ffffff;
+          --mud-palette-tertiary-darken: rgb(25, 167, 138);
+          --mud-palette-tertiary-lighten: rgb(45, 223, 187);
+          --mud-palette-tertiary-hover: rgba(30, 200, 165, 0.06);
+          --mud-palette-info: #2196f3;
+          --mud-palette-info-rgb: 33, 150, 243;
+          --mud-palette-info-text: #ffffff;
+          --mud-palette-info-darken: rgb(12, 131, 226);
+          --mud-palette-info-lighten: rgb(69, 167, 245);
+          --mud-palette-info-hover: rgba(33, 150, 243, 0.06);
+          --mud-palette-success: #00c853;
+          --mud-palette-success-rgb: 0, 200, 83;
+          --mud-palette-success-text: #ffffff;
+          --mud-palette-success-darken: rgb(0, 162, 67);
+          --mud-palette-success-lighten: rgb(0, 238, 99);
+          --mud-palette-success-hover: rgba(0, 200, 83, 0.06);
+          --mud-palette-warning: #ff9800;
+          --mud-palette-warning-rgb: 255, 152, 0;
+          --mud-palette-warning-text: #ffffff;
+          --mud-palette-warning-darken: rgb(217, 129, 0);
+          --mud-palette-warning-lighten: rgb(255, 167, 38);
+          --mud-palette-warning-hover: rgba(255, 152, 0, 0.06);
+          --mud-palette-error: #f44336;
+          --mud-palette-error-rgb: 244, 67, 54;
+          --mud-palette-error-text: #ffffff;
+          --mud-palette-error-darken: rgb(242, 33, 18);
+          --mud-palette-error-lighten: rgb(246, 101, 90);
+          --mud-palette-error-hover: rgba(244, 67, 54, 0.06);
+          --mud-palette-dark: #424242;
+          --mud-palette-dark-rgb: 66, 66, 66;
+          --mud-palette-dark-text: #ffffff;
+          --mud-palette-dark-darken: rgb(47, 47, 47);
+          --mud-palette-dark-lighten: rgb(85, 85, 85);
+          --mud-palette-dark-hover: rgba(66, 66, 66, 0.06);
+          --mud-palette-text-primary: #424242;
+          --mud-palette-text-secondary: rgba(0, 0, 0, 0.54);
+          --mud-palette-text-disabled: rgba(0, 0, 0, 0.38);
+          --mud-palette-action-default: rgba(0, 0, 0, 0.54);
+          --mud-palette-action-default-hover: rgba(0, 0, 0, 0.06);
+          --mud-palette-action-disabled: rgba(0, 0, 0, 0.26);
+          --mud-palette-action-disabled-background: rgba(0, 0, 0, 0.12);
+          --mud-palette-surface: #ffffff;
+          --mud-palette-background: #ffffff;
+          --mud-palette-background-grey: #f5f5f5;
+          --mud-palette-drawer-background: #ffffff;
+          --mud-palette-drawer-text: #424242;
+          --mud-palette-drawer-icon: #616161;
+          --mud-palette-appbar-background: #594ae2;
+          --mud-palette-appbar-text: #ffffff;
+          --mud-palette-lines-default: rgba(0, 0, 0, 0.12);
+          --mud-palette-lines-inputs: #bdbdbd;
+          --mud-palette-table-lines: rgba(224, 224, 224, 1);
+          --mud-palette-table-striped: rgba(0, 0, 0, 0.02);
+          --mud-palette-table-hover: rgba(0, 0, 0, 0.04);
+          --mud-palette-divider: #e0e0e0;
+          --mud-palette-divider-light: rgba(0, 0, 0, 0.8);
+          --mud-palette-grey-default: #9e9e9e;
+          --mud-palette-grey-light: #bdbdbd;
+          --mud-palette-grey-lighter: #e0e0e0;
+          --mud-palette-grey-dark: #757575;
+          --mud-palette-grey-darker: #616161;
+          --mud-palette-overlay-dark: rgba(33, 33, 33, 0.5);
+          --mud-palette-overlay-light: rgba(255, 255, 255, 0.5);
+          --mud-elevation-0: none;
+          --mud-elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          --mud-elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+            0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+          --mud-elevation-3: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+            0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+          --mud-elevation-4: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+            0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+          --mud-elevation-5: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+            0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+          --mud-elevation-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+            0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+          --mud-elevation-7: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),
+            0px 7px 10px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+          --mud-elevation-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+            0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+            0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+          --mud-elevation-9: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),
+            0px 9px 12px 1px rgba(0, 0, 0, 0.14),
+            0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+          --mud-elevation-10: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),
+            0px 10px 14px 1px rgba(0, 0, 0, 0.14),
+            0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+          --mud-elevation-11: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),
+            0px 11px 15px 1px rgba(0, 0, 0, 0.14),
+            0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+          --mud-elevation-12: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+            0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+            0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+          --mud-elevation-13: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+            0px 13px 19px 2px rgba(0, 0, 0, 0.14),
+            0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+          --mud-elevation-14: 0px 7px 9px -4px rgba(0, 0, 0, 0.2),
+            0px 14px 21px 2px rgba(0, 0, 0, 0.14),
+            0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+          --mud-elevation-15: 0px 8px 9px -5px rgba(0, 0, 0, 0.2),
+            0px 15px 22px 2px rgba(0, 0, 0, 0.14),
+            0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+          --mud-elevation-16: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
+            0px 16px 24px 2px rgba(0, 0, 0, 0.14),
+            0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+          --mud-elevation-17: 0px 8px 11px -5px rgba(0, 0, 0, 0.2),
+            0px 17px 26px 2px rgba(0, 0, 0, 0.14),
+            0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+          --mud-elevation-18: 0px 9px 11px -5px rgba(0, 0, 0, 0.2),
+            0px 18px 28px 2px rgba(0, 0, 0, 0.14),
+            0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+          --mud-elevation-19: 0px 9px 12px -6px rgba(0, 0, 0, 0.2),
+            0px 19px 29px 2px rgba(0, 0, 0, 0.14),
+            0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+          --mud-elevation-20: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+            0px 20px 31px 3px rgba(0, 0, 0, 0.14),
+            0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+          --mud-elevation-21: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),
+            0px 21px 33px 3px rgba(0, 0, 0, 0.14),
+            0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+          --mud-elevation-22: 0px 10px 14px -6px rgba(0, 0, 0, 0.2),
+            0px 22px 35px 3px rgba(0, 0, 0, 0.14),
+            0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+          --mud-elevation-23: 0px 11px 14px -7px rgba(0, 0, 0, 0.2),
+            0px 23px 36px 3px rgba(0, 0, 0, 0.14),
+            0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+          --mud-elevation-24: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+            0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+            0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+          --mud-elevation-25: 0 5px 5px -3px rgba(0, 0, 0, 0.06),
+            0 8px 10px 1px rgba(0, 0, 0, 0.042),
+            0 3px 14px 2px rgba(0, 0, 0, 0.036);
+          --mud-default-borderradius: 4px;
+          --mud-drawer-width-left: 240px;
+          --mud-drawer-width-right: 240px;
+          --mud-drawer-width-mini-left: 56px;
+          --mud-drawer-width-mini-right: 56px;
+          --mud-appbar-min-height: 64px;
+          --mud-typography-default-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-default-size: 0.875rem;
+          --mud-typography-default-weight: 400;
+          --mud-typography-default-lineheight: 1.43;
+          --mud-typography-default-letterspacing: 0.01071em;
+          --mud-typography-h1-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-h1-size: 6rem;
+          --mud-typography-h1-weight: 300;
+          --mud-typography-h1-lineheight: 1.167;
+          --mud-typography-h1-letterspacing: -0.01562em;
+          --mud-typography-h2-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-h2-size: 3.75rem;
+          --mud-typography-h2-weight: 300;
+          --mud-typography-h2-lineheight: 1.2;
+          --mud-typography-h2-letterspacing: -0.00833em;
+          --mud-typography-h3-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-h3-size: 3rem;
+          --mud-typography-h3-weight: 400;
+          --mud-typography-h3-lineheight: 1.167;
+          --mud-typography-h3-letterspacing: 0;
+          --mud-typography-h4-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-h4-size: 2.125rem;
+          --mud-typography-h4-weight: 400;
+          --mud-typography-h4-lineheight: 1.235;
+          --mud-typography-h4-letterspacing: 0.00735em;
+          --mud-typography-h5-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-h5-size: 1.5rem;
+          --mud-typography-h5-weight: 400;
+          --mud-typography-h5-lineheight: 1.334;
+          --mud-typography-h5-letterspacing: 0;
+          --mud-typography-h6-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-h6-size: 1.25rem;
+          --mud-typography-h6-weight: 500;
+          --mud-typography-h6-lineheight: 1.6;
+          --mud-typography-h6-letterspacing: 0.0075em;
+          --mud-typography-subtitle1-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-subtitle1-size: 1rem;
+          --mud-typography-subtitle1-weight: 400;
+          --mud-typography-subtitle1-lineheight: 1.75;
+          --mud-typography-subtitle1-letterspacing: 0.00938em;
+          --mud-typography-subtitle2-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-subtitle2-size: 0.875rem;
+          --mud-typography-subtitle2-weight: 500;
+          --mud-typography-subtitle2-lineheight: 1.57;
+          --mud-typography-subtitle2-letterspacing: 0.00714em;
+          --mud-typography-body1-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-body1-size: 1rem;
+          --mud-typography-body1-weight: 400;
+          --mud-typography-body1-lineheight: 1.5;
+          --mud-typography-body1-letterspacing: 0.00938em;
+          --mud-typography-body2-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-body2-size: 0.875rem;
+          --mud-typography-body2-weight: 400;
+          --mud-typography-body2-lineheight: 1.43;
+          --mud-typography-body2-letterspacing: 0.01071em;
+          --mud-typography-button-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-button-size: 0.875rem;
+          --mud-typography-button-weight: 500;
+          --mud-typography-button-lineheight: 1.75;
+          --mud-typography-button-letterspacing: 0.02857em;
+          --mud-typography-caption-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-caption-size: 0.75rem;
+          --mud-typography-caption-weight: 400;
+          --mud-typography-caption-lineheight: 1.66;
+          --mud-typography-caption-letterspacing: 0.03333em;
+          --mud-typography-overline-family: "Roboto", "Helvetica", "Arial",
+            "sans-serif";
+          --mud-typography-overline-size: 0.75rem;
+          --mud-typography-overline-weight: 400;
+          --mud-typography-overline-lineheight: 2.66;
+          --mud-typography-overline-letterspacing: 0.08333em;
+          --mud-zindex-drawer: 1100;
+          --mud-zindex-appbar: 1200;
+          --mud-zindex-dialog: 1300;
+          --mud-zindex-popover: 1400;
+          --mud-zindex-snackbar: 1500;
+          --mud-zindex-tooltip: 1600;
+        }
+      </style>
+      <!--!-->
+      <!--!--><!--!--><!--!--><!--!-->
+      <!--!-->
+      <div
+        id="mud-snackbar-container"
+        class="mud-snackbar-location-top-right"
+      ></div>
+      <!--!-->
+      <!--!--><!--!--><!--!--><!--!-->
+      <!--!--><!--!-->
+      <div
+        class="mud-layout mud-drawer-open-responsive-md-left mud-drawer-left-clipped-never"
+      >
+        <!--!--><!--!-->
+        <div class="app-admin-wrap layout-sidebar-vertical sidebar-full">
+          <!--!-->
+          <header class="mud-appbar mud-appbar-fixed mud-elevation-25">
+            <!--!-->
+            <div class="mud-toolbar mud-toolbar-gutters mud-toolbar-appbar">
+              <!--!--><!--!--><button
+                type="button"
+                class="mud-button-root mud-icon-button mud-icon-button-color-inherit mud-ripple mud-ripple-icon mud-icon-button-edge-start"
+                _bl_4cd6208c-de8c-448d-9ece-74c8bc911c05=""
+              >
+                <span class="mud-icon-button-label"
+                  ><!--!--><svg
+                    class="mud-icon-root mud-svg-icon mud-inherit-text mud-icon-size-medium"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <!--!-->
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                    ></path></svg
+                ></span></button
+              ><!--!-->
+              <!--!--><!--!-->
+              <h5
+                class="mud-typography mud-typography-h5 mud-inherit-text mudblazor-appbar-brand-text"
+              >
+                <!--!--><a
+                  href="/pos/posinvoice"
+                  class="btn btn-outline-success ripple m-1"
+                  ><span class="ul-btn__text ml-1" style="color: #000000"
+                    >POS</span
+                  ></a
+                >
+                <!--!-->
+                <form class="form-inline" style="float: left">
+                  <select class="form-control mr-2" style="color: #000000">
+                    <option value="ar-AE">Arabic</option>
+                    <option value="bn-BD">Bangladesh</option>
+                    <option value="en-US">English</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="th-TH">Thai</option></select
+                  ><!--!-->
+                  <button
+                    class="btn btn-outline-success ripple m-1"
+                    style="color: #000000"
+                  >
+                    Change Language
+                  </button>
+                </form>
+              </h5>
+              <!--!-->
+              <!--!--><!--!-->
+              <div class="flex-grow-1"></div>
+              <!--!-->
+
+              <!--!--><!--!-->
+              <div class="flex-grow-1"></div>
+              <!--!-->
+              <!--!--><!--!-->
+              <div class="dropdown" style="cursor: pointer">
+                <!--!-->
+                <div
+                  class="badge-top-container"
+                  role="button"
+                  id="dropdownNotification"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="badge badge-primary"></span>
+                  <i class="i-Bell text-muted header-icon"></i>
+                </div>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right notification-dropdown rtl-ps-none ps"
+                  aria-labelledby="dropdownNotification"
+                  data-perfect-scrollbar=""
+                  data-suppress-scroll-x="true"
+                  x-placement="bottom-end"
+                  style="
+                    position: absolute;
+                    will-change: transform;
+                    top: 0px;
+                    left: 0px;
+                    transform: translate3d(40px, 36px, 0px);
+                  "
+                >
+                  <div class="dropdown-item d-flex">
+                    <!--!-->
+                    <div class="notification-icon">
+                      <i class="i-Speach-Bubble-6 text-primary mr-1"></i>
+                    </div>
+                    <div class="notification-details flex-grow-1">
+                      <p class="m-0 d-flex align-items-center">
+                        <span>21 Negative stock products </span>
+                      </p>
+                    </div>
+                  </div>
+                  <!--!-->
+                  <div class="dropdown-item d-flex">
+                    <!--!-->
+                    <div class="notification-icon">
+                      <i class="i-Receipt-3 text-success mr-1"></i>
+                    </div>
+                    <div class="notification-details flex-grow-1">
+                      <p class="m-0 d-flex align-items-center">
+                        <span>33 Minimum stock products </span>
+                      </p>
+                    </div>
+                  </div>
+                  <!--!-->
+                  <div class="dropdown-item d-flex">
+                    <!--!-->
+                    <div class="notification-icon">
+                      <i class="i-Empty-Box text-danger mr-1"></i>
+                    </div>
+                    <div class="notification-details flex-grow-1">
+                      <p class="m-0 d-flex align-items-center">
+                        <span>8 Maximum stock products </span>
+                      </p>
+                    </div>
+                  </div>
+                  <!--!-->
+                  <!--!-->
+                  <div class="ps__rail-x" style="left: 0px; bottom: 0px">
+                    <div
+                      class="ps__thumb-x"
+                      tabindex="0"
+                      style="left: 0px; width: 0px"
+                    ></div>
+                  </div>
+                  <!--!-->
+                  <div class="ps__rail-y" style="top: 0px; right: 0px">
+                    <div
+                      class="ps__thumb-y"
+                      tabindex="0"
+                      style="top: 0px; height: 0px"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <!--!-->
+              <!--!-->
+              <div class="mud-menu mt-1 ml-4" oncontextmenu="">
+                <!--!-->
+                <div>
+                  <!--!-->
+                  <div class="mud-avatar mud-avatar-medium mud-theme-default">
+                    <img src="img/profile.jpg" class="mud-avatar-img" />
+                  </div>
+                </div>
+                <!--!--><!--!-->
+                <div
+                  class="mud-popover mud-popover-left mud-popover-offset-x mud-paper mud-elevation-8 mud-menu-container"
+                  style=""
+                >
+                  <!--!-->
+                  <div class="mud-list mud-list-padding">
+                    <!--!--><!--!--><!--!--><!--!--><!--!-->
+                    <div
+                      class="mud-paper mud-paper-square mud-elevation-0 mud-card mt-n2"
+                      style=""
+                    >
+                      <!--!-->
+                      <div class="mud-card-header">
+                        <div class="mud-card-header-avatar">
+                          <!--!-->
+                          <div
+                            class="mud-avatar mud-avatar-medium mud-theme-default"
+                          >
+                            <img src="img/profile.jpg" class="mud-avatar-img" />
+                          </div>
+                        </div>
+                        <div class="mud-card-header-content">
+                          <!--!-->
+                          <p
+                            class="mud-typography mud-typography-body2 mud-inherit-text"
+                          >
+                            admin@gmail.com
+                          </p>
+                          <!--!-->
+                          <!--!--><span
+                            class="mud-typography mud-typography-caption mud-inherit-text"
+                            >Online</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!--!-->
+                    <!--!-->
+                    <hr class="mud-divider mb-2" />
+                    <!--!-->
+
+                    <a style="cursor: pointer; margin-right: 10px; float: right"
+                      >Logout</a
+                    >
+                  </div>
+                </div>
+                <!--!-->
+                <!--!-->
+              </div>
+              <!--!-->
+              <!--!-->
+            </div>
+          </header>
+          <!--!-->
+
+          <!--!-->
+          <aside
+            class="mud-drawer mud-drawer-fixed mud-drawer-pos-left mud-drawer--open mud-drawer--initial mud-drawer-md mud-drawer-clipped-never mud-elevation-25 mud-drawer-responsive mudblazor-appbar-band"
+            style=""
+            _bl_b6c63ff1-f8dd-4425-b823-8ae223b355b4=""
+          >
+            <div
+              class="mud-drawer-content"
+              _bl_31c1a7a1-cd53-4684-8efb-e3234b4edca7=""
+            >
+              <!--!--><a href="/dashboard"
+                ><!--!-->
+                <div class="mud-drawer-header mudblazor-brand">
+                  <!--!--><img
+                    src="img/logo.jpg"
+                    style="margin-top: -20px"
+                    width="80"
+                    height="80"
+                  /></div></a
+              ><!--!-->
+              <div class="sidebar-panel bg-white">
+                <!--!-->
+                <div>
+                  <div
+                    class="scroll-nav ps"
+                    data-perfect-scrollbar="data-perfect-scrollbar"
+                    data-suppress-scroll-x="true"
+                  >
+                    <div class="side-nav">
+                      <div class="main-menu">
+                        <ul
+                          class="metismenu"
+                          id="menu"
+                          style="margin-top: 20px"
+                        >
+                          <!--!-->
+                          <li class="Ul_li--hover">
+                            <a class="has-arrow"
+                              ><!--!--><i
+                                data-v-7074f502=""
+                                class="nav-icon i-Files"
+                              ></i>
+                              <span data-v-7074f502="" class="item-name"
+                                >Products</span
+                              ></a
+                            >
+                            <ul class="">
+                              <li class="item-name">
+                                <a href="/productlist.html"
+                                  ><!--!--><i
+                                    data-v-7074f502=""
+                                    class="nav-icon i-Add-File"
+                                  ></i
+                                  ><span class="item-name"
+                                    >Create Product</span
+                                  ></a
+                                >
+                              </li>
+                              <!--!-->
+                              <li class="item-name"></li>
+                              <li class="nav-item">
+                                <a href="productlist.html"
+                                  ><!--!--><i
+                                    data-v-7074f502=""
+                                    class="nav-icon i-Files"
+                                  ></i
+                                  ><span class="item-name"
+                                    >Product List</span
+                                  ></a
+                                >
+                              </li>
+                              <!--!-->
+                              <li class="item-name">
+                                <a href="/productlist.html"
+                                  ><!--!--><i
+                                    data-v-7074f502=""
+                                    class="nav-icon i-Files"
+                                  ></i
+                                  ><span class="item-name"
+                                    >Product Group</span
+                                  ></a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <!--!-->
+                        </ul>
+                      </div>
+                    </div>
+                    <!--!-->
+                    <!--!-->
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px">
+                      <div
+                        class="ps__thumb-x"
+                        tabindex="0"
+                        style="left: 0px; width: 0px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div
+                      class="ps__rail-y"
+                      style="top: 0px; height: 404px; right: 0px"
+                    >
+                      <div
+                        class="ps__thumb-y"
+                        tabindex="0"
+                        style="top: 0px; height: 325px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px">
+                      <div
+                        class="ps__thumb-x"
+                        tabindex="0"
+                        style="left: 0px; width: 0px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div
+                      class="ps__rail-y"
+                      style="top: 0px; height: 404px; right: 0px"
+                    >
+                      <div
+                        class="ps__thumb-y"
+                        tabindex="0"
+                        style="top: 0px; height: 325px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px">
+                      <div
+                        class="ps__thumb-x"
+                        tabindex="0"
+                        style="left: 0px; width: 0px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div class="ps__rail-y" style="top: 0px; right: 0px">
+                      <div
+                        class="ps__thumb-y"
+                        tabindex="0"
+                        style="top: 0px; height: 0px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px">
+                      <div
+                        class="ps__thumb-x"
+                        tabindex="0"
+                        style="left: 0px; width: 0px"
+                      ></div>
+                    </div>
+                    <!--!-->
+                    <div class="ps__rail-y" style="top: 0px; right: 0px">
+                      <div
+                        class="ps__thumb-y"
+                        tabindex="0"
+                        style="top: 0px; height: 0px"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!--!-->
+          <!--!--><!--!-->
+          <!--!-->
+          <div class="mud-main-content mudblazor-main-content">
+            <!--!-->
+            <div class="mud-container mud-container-maxwidth-lg">
+              <!--!-->
+              <div class="main-content pt-4">
+                <div>
+                  <div class="breadcrumb">
+                    <h1>Product</h1>
+                    <!--!-->
+                    <ul>
+                      <li><a href="">Settings</a></li>
+                      <!--!-->
+                      <li>Product / Add</li>
+                    </ul>
+                  </div>
+                  <!--!-->
+                  <div class="separator-breadcrumb border-top"></div>
+                </div>
+                <!--!-->
+                <div class="card wrapper">
+                  <!--!-->
+                  <form>
+                    <!--!--><!--!--><!--!-->
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="card-title mb-3">Product</div>
+                            <!--!-->
+                            <div class="row">
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="firstName1">Product Name</label
+                                ><!--!-->
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="Enter you product name"
+                                /><!--!-->
+                                <!--!-->
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="lastName1">Product Code</label
+                                ><!--!-->
+                                <input
+                                  class="form-control"
+                                  readonly=""
+                                  type="text"
+                                  placeholder="Enter your product code"
+                                /><!--!-->
+                                <!--!-->
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="exampleInputEmail1"
+                                  >Product Group</label
+                                ><!--!-->
+                                <select class="form-control">
+                                  <option value="0">Choose</option>
+                                  <option value="1">Primary</option>
+                                  <option value="13">Burgar</option>
+                                  <option value="14">Pizza 2</option>
+                                  <option value="15">Cold Drink</option>
+                                  <option value="16">Nimko</option>
+                                  <option value="17">Sweets</option>
+                                  <option value="18">INCUBATOR</option>
+                                  <option value="20">television</option>
+                                  <option value="21">Secondary</option>
+                                  <option value="22">Mini pizza</option>
+                                  <option value="24">Cold drink test</option>
+                                  <option value="25">MEDICAMENTOS</option>
+                                </select>
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="phone">Brand</label
+                                ><!--!-->
+                                <select class="form-control">
+                                  <option value="0">Choose</option>
+                                  <option value="1004">Akris Punto</option>
+                                </select>
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="credit1">Unit</label
+                                ><!--!-->
+                                <select class="form-control">
+                                  <option value="0">Choose</option>
+                                  <option value="1">Pieces</option>
+                                  <option value="2">Kilogram</option>
+                                  <option value="1003">Litre</option>
+                                  <option value="1004">NIU</option>
+                                  <option value="1005">asdsad</option>
+                                  <option value="1006">wrewer</option>
+                                  <option value="1007">plastic</option>
+                                </select>
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="website">Purchase Rate</label
+                                ><!--!-->
+                                <input class="form-control" type="number" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker2">Sales Rate</label
+                                ><!--!-->
+                                <input class="form-control" type="number" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker2">Mrp</label
+                                ><!--!-->
+                                <input class="form-control" type="number" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker1">Tax</label
+                                ><!--!-->
+                                <select class="form-control">
+                                  <option value="0">Choose</option>
+                                  <option value="1">NA</option>
+                                  <option value="2">VAT 13</option>
+                                  <option value="3">Sales Tax</option>
+                                  <option value="4">Purchase Tax</option>
+                                  <option value="1003">Tva</option>
+                                </select>
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker2">Minimum Stock</label
+                                ><!--!-->
+                                <input class="form-control" type="number" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker2">Maximum Stock</label
+                                ><!--!-->
+                                <input class="form-control" type="number" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker2">Description</label
+                                ><!--!-->
+                                <input class="form-control" type="text" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-6 form-group mb-3">
+                                <label for="picker2">Is Active</label
+                                ><!--!-->
+                                <input class="form-control" type="checkbox" />
+                              </div>
+                              <!--!-->
+                              <div class="col-md-12">
+                                <button class="btn btn-primary">Submit</button
+                                ><!--!-->
+                                <button type="button" class="btn btn-danger">
+                                  Back to List
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--!-->
+                      <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="card-header"><h5>Image</h5></div>
+                            <!--!-->
+                            <div class="card-body">
+                              <div class="row form-group">
+                                <div class="col-md-12 mb-5">
+                                  <div
+                                    id="my-strictly-unique-vue-upload-multiple-image"
+                                    class="d-flex justify-content-center"
+                                  >
+                                    <div class="row">
+                                      <!--!--><img
+                                        src="img/logo.jpg"
+                                        alt=""
+                                      /><!--!--><!--!-->
+                                      <!--!--><input
+                                        type="file"
+                                        _bl_998ea488-4cc4-41d0-86a2-f26b6554d2b7=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--!-->
+
+            <!--!--><span class="mud-scroll-to-top hidden"
+              ><!--!--><!--!--><button
+                type="button"
+                class="mud-button-root mud-fab mud-fab-primary mud-fab-size-large mud-ripple"
+                _bl_a0c08ce2-720c-47b3-b586-c056fb8d1970=""
+              >
+                <span class="mud-fab-label"
+                  ><!--!--><svg
+                    class="mud-icon-root mud-svg-icon mud-inherit-text mud-icon-size-medium"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <!--!-->
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                    ></path></svg
+                ></span></button
+            ></span>
+          </div>
+        </div></div
+    ></mudrtlprovider>
+
+    <div id="blazor-error-ui">
+      An error has occurred. This application may no longer respond until
+      reloaded.
+
+      <a href="" class="reload">Reload</a>
+      <a class="dismiss">🗙</a>
+    </div>
+    <!-- ============ Search UI End ============= -->
+    <script src="dist-assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="dist-assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="_framework/blazor.server.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script src="_content/BlazorInputFile/inputfile.js"></script>
+    <script src="js/JSInterop.js"></script>
+    <script src="js/SaveAsPdf.js"></script>
+    <script src="js/jsPrint.js"></script>
+    <script type="text/javascript">
+      function printDiv() {
+        var printwin = window.open("");
+        printwin.document.write(document.getElementById("PrintDiv").innerHTML);
+        printwin.stop();
+        printwin.print();
+        printwin.close();
+      }
+    </script>
+    <script>
+      Blazor.defaultReconnectionHandler._reconnectCallback = function (d) {
+        document.location.reload();
+      };
+    </script>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
