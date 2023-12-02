@@ -149,3 +149,30 @@ span {
 .mud-drawer-header {
     height: 62px;
 }
+
+.Ul_li--hover {
+    cursor: pointer;
+  }
+  
+  .Ul_li--hover ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  .Ul_li--hover > a {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Ul_li--hover > a i {
+    margin-right: 10px;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+

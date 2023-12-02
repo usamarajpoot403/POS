@@ -37,3 +37,18 @@ window.JSInteropExt.saveAsFile = (filename, type, bytesBase64) => {
     }
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const productsDropdown = document.querySelector('.Ul_li--hover');
+    const productsMenu = productsDropdown.querySelector('ul');
+  
+    productsDropdown.addEventListener('click', () => {
+      // Toggle the display property to show/hide the submenu
+      productsMenu.style.display = productsMenu.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+  
+
+
+
+

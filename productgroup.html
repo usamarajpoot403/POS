@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blazor-POS</title>
-    <base href="/" />
+    <!-- <base href="/" /> -->
     <link
       href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900"
       rel="stylesheet"
@@ -518,7 +518,6 @@
           <!--!-->
 
           <!--!-->
-
           <aside
             class="mud-drawer mud-drawer-fixed mud-drawer-pos-left mud-drawer--open mud-drawer--initial mud-drawer-md mud-drawer-clipped-never mud-elevation-25 mud-drawer-responsive mudblazor-appbar-band"
             style=""
@@ -609,7 +608,6 @@
                     </div>
                     <!--!-->
                     <!--!-->
-
                     <div class="ps__rail-x" style="left: 0px; bottom: 0px">
                       <div
                         class="ps__thumb-x"
@@ -686,6 +684,13 @@
           </aside>
           <!--!-->
           <!--!--><!--!-->
+
+
+
+
+
+
+
           <!--!-->
           <div class="mud-main-content mudblazor-main-content">
             <!--!-->
@@ -694,12 +699,12 @@
               <div class="main-content pt-4">
                 <div>
                   <div class="breadcrumb">
-                    <h1>Product</h1>
+                    <h1>Product Group</h1>
                     <!--!-->
                     <ul>
                       <li><a href="">Settings</a></li>
                       <!--!-->
-                      <li>Product / Add</li>
+                      <li>Product Group</li>
                     </ul>
                   </div>
                   <!--!-->
@@ -708,185 +713,52 @@
                 <!--!-->
                 <div class="card wrapper">
                   <!--!-->
-                  <form>
-                    <!--!--><!--!--><!--!-->
-                    <div class="row">
-                      <div class="col-md-8">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="card-title mb-3">Product</div>
-                            <!--!-->
-                            <div class="row">
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="firstName1">Product Name</label
-                                ><!--!-->
-                                <input
-                                  class="form-control"
-                                  type="text"
-                                  placeholder="Enter you product name"
-                                /><!--!-->
-                                <!--!-->
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="lastName1">Product Code</label
-                                ><!--!-->
-                                <input
-                                  class="form-control"
-                                  readonly=""
-                                  type="text"
-                                  placeholder="Enter your product code"
-                                /><!--!-->
-                                <!--!-->
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="exampleInputEmail1"
-                                  >Product Group</label
-                                ><!--!-->
-                                <select class="form-control">
-                                  <option value="0">Choose</option>
-                                  <option value="1">Primary</option>
-                                  <option value="13">Burgar</option>
-                                  <option value="14">Pizza 2</option>
-                                  <option value="15">Cold Drink</option>
-                                  <option value="16">Nimko</option>
-                                  <option value="17">Sweets</option>
-                                  <option value="18">INCUBATOR</option>
-                                  <option value="20">television</option>
-                                  <option value="21">Secondary</option>
-                                  <option value="22">Mini pizza</option>
-                                  <option value="24">Cold drink test</option>
-                                  <option value="25">MEDICAMENTOS</option>
-                                </select>
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="phone">Brand</label
-                                ><!--!-->
-                                <select class="form-control">
-                                  <option value="0">Choose</option>
-                                  <option value="1004">Akris Punto</option>
-                                </select>
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="credit1">Unit</label
-                                ><!--!-->
-                                <select class="form-control">
-                                  <option value="0">Choose</option>
-                                  <option value="1">Pieces</option>
-                                  <option value="2">Kilogram</option>
-                                  <option value="1003">Litre</option>
-                                  <option value="1004">NIU</option>
-                                  <option value="1005">asdsad</option>
-                                  <option value="1006">wrewer</option>
-                                  <option value="1007">plastic</option>
-                                </select>
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="website">Purchase Rate</label
-                                ><!--!-->
-                                <input class="form-control" type="number" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker2">Sales Rate</label
-                                ><!--!-->
-                                <input class="form-control" type="number" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker2">Mrp</label
-                                ><!--!-->
-                                <input class="form-control" type="number" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker1">Tax</label
-                                ><!--!-->
-                                <select class="form-control">
-                                  <option value="0">Choose</option>
-                                  <option value="1">NA</option>
-                                  <option value="2">VAT 13</option>
-                                  <option value="3">Sales Tax</option>
-                                  <option value="4">Purchase Tax</option>
-                                  <option value="1003">Tva</option>
-                                </select>
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker2">Minimum Stock</label
-                                ><!--!-->
-                                <input class="form-control" type="number" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker2">Maximum Stock</label
-                                ><!--!-->
-                                <input class="form-control" type="number" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker2">Description</label
-                                ><!--!-->
-                                <input class="form-control" type="text" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-6 form-group mb-3">
-                                <label for="picker2">Is Active</label
-                                ><!--!-->
-                                <input class="form-control" type="checkbox" />
-                              </div>
-                              <!--!-->
-                              <div class="col-md-12">
-                                <button class="btn btn-primary">Submit</button
-                                ><!--!-->
-                                <button type="button" class="btn btn-danger">
-                                  Back to List
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--!-->
-                      <div class="col-md-4">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="card-header"><h5>Image</h5></div>
-                            <!--!-->
-                            <div class="card-body">
-                              <div class="row form-group">
-                                <div class="col-md-12 mb-5">
-                                  <div
-                                    id="my-strictly-unique-vue-upload-multiple-image"
-                                    class="d-flex justify-content-center"
-                                  >
-                                    <div class="row">
-                                      <!--!--><img
-                                        src="img/logo.jpg"
-                                        alt=""
-                                      /><!--!--><!--!-->
-                                      <!--!--><input
-                                        type="file"
-                                        _bl_998ea488-4cc4-41d0-86a2-f26b6554d2b7=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                  <!-- product group listing  here -->
+
+<div class="card-body"><div class="vgt-wrap "><div class="vgt-inner-wrap"><div class="vgt-global-search vgt-clearfix"><div class="vgt-global-search__actions vgt-pull-right"><div class="mt-2 mb-3"><a href="createproduct.html" class="btn btn-rounded btn-btn btn-primary btn-icon m-1"><!--!--><i class="i-Add"></i>
+    Create</a></div></div></div><!--!-->
+  <div class="vgt-responsive"><!--!--><div class="mud-table mud-xs-table mud-table-dense mud-table-hover mud-table-bordered mud-table-striped mud-elevation-1"><!--!--><!--!--><div class="mud-toolbar mud-toolbar-gutters mud-table-toolbar"><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control mt-0"><div class="mud-input-control-input-container"><!--!--><div class="mud-input mud-input-text mud-input-adorned-start mud-input-underline mud-shrink"><!--!--><div class="mud-input-adornment mud-input-adornment-start"><!--!--><svg class="mud-icon-root mud-icon-default mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div><input type="text" class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-start" placeholder="Search" _bl_41d4943c-d6f8-42bb-b771-7d8f697018cb=""></div></div></div></div><div class="mud-table-container" style=" "><table class="mud-table-root"><thead class="mud-table-head"><!--!--><tr class="mud-table-row"><!--!--><th scope="col" class="mud-table-cell">Product Group</th><!--!-->
+  <!--!--><th scope="col" class="mud-table-cell"></th></tr></thead><tbody class="mud-table-body"><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Primary</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/1"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Burgar</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/13"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Pizza 2</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/14"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Cold Drink</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/15"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Nimko</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/16"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Sweets</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/17"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">INCUBATOR</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/18"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">television</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/20"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Secondary</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/21"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr><!--!--><tr class="mud-table-row" style=""><!--!--><td data-label="" class="mud-table-cell">Mini pizza</td><!--!-->
+  <!--!--><td data-label="" class="mud-table-cell"><center><a href="/product/productgroupedit/22"><!--!--><i class="i-Edit text-25 text-success"></i></a><!--!-->
+                                    <a style="cursor:pointer;"><!--!--><i class="i-Close-Window text-25 text-danger"></i></a></center></td></tr></tbody></table></div><div class="mud-table-pagination"><!--!--><!--!--><div class="mud-toolbar mud-toolbar-gutters mud-table-pagination-toolbar"><!--!--><div class="mud-table-pagination-spacer"></div><!--!--><p class="mud-typography mud-typography-body2 mud-inherit-text mud-table-pagination-caption">Rows per page:</p><!--!-->
+  <!--!--><!--!--><div class="mud-select"><!--!--><div class="mud-input-control mud-input-control-margin-dense mud-select mud-table-pagination-select"><div class="mud-input-control-input-container"><!--!--><div class="mud-input mud-input-text mud-input-adorned-end mud-input-margin-dense mud-shrink mud-select-input"><div class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end mud-input-root-margin-dense mud-select-input">10</div><input type="hidden" class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end mud-input-root-margin-dense mud-select-input" readonly="" _bl_ad84e113-e485-4aed-8d26-7c611f910def="" value="10"><!--!--><div class="mud-input-adornment mud-input-adornment-end mud-select-input"><!--!--><svg class="mud-icon-root mud-icon-default mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M7 10l5 5 5-5z"></path></svg></div></div></div></div><!--!-->
+  <!--!--><!--!--><div class="mud-popover mud-popover-bottom mud-paper mud-elevation-8" style="max-height:300px;"><!--!--><div class="mud-list mud-list-padding"><!--!--><!--!--><!--!--><div class="mud-list-item mud-list-item-dense mud-list-item-gutters mud-list-item-clickable mud-ripple"><div class="mud-list-item-text "><!--!--><p class="mud-typography mud-typography-body2 mud-inherit-text">10</p></div></div><!--!--><!--!--><div class="mud-list-item mud-list-item-dense mud-list-item-gutters mud-list-item-clickable mud-ripple"><div class="mud-list-item-text "><!--!--><p class="mud-typography mud-typography-body2 mud-inherit-text">20</p></div></div><!--!--><!--!--><div class="mud-list-item mud-list-item-dense mud-list-item-gutters mud-list-item-clickable mud-ripple"><div class="mud-list-item-text "><!--!--><p class="mud-typography mud-typography-body2 mud-inherit-text">50</p></div></div><!--!--><!--!--><div class="mud-list-item mud-list-item-dense mud-list-item-gutters mud-list-item-clickable mud-ripple"><div class="mud-list-item-text "><!--!--><p class="mud-typography mud-typography-body2 mud-inherit-text">100</p></div></div></div></div></div><!--!-->
+
+<!--!--><!--!--><p class="mud-typography mud-typography-body2 mud-inherit-text mud-table-pagination-caption">1-10 of 12</p><!--!-->
+<div class="mud-table-pagination-actions"><!--!--><!--!--><button type="button" disabled="" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon" _bl_d125442f-5b57-478d-919d-f6b8d64ad738=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-inherit-text mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"></path><path d="M24 24H0V0h24v24z" fill="none"></path></svg></span></button><!--!-->
+      <!--!--><!--!--><button type="button" disabled="" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon" _bl_45199acd-d061-4244-94a9-1f1c5e0d0058=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-inherit-text mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg></span></button><!--!-->
+      <!--!--><!--!--><button type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon" _bl_9fd9168d-a8ff-4d67-afe2-f8aa2beb69b6=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-inherit-text mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></span></button><!--!-->
+      <!--!--><!--!--><button type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon" _bl_bbf14499-81c7-4327-b9e4-e26882bee305=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-inherit-text mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"></path></svg></span></button></div></div></div></div></div></div></div></div>
+
+                 
+                  </div>
                 </div>
               </div>
             </div>
             <!--!-->
+
+
+
+
+
 
             <!--!--><span class="mud-scroll-to-top hidden"
               ><!--!--><!--!--><button
